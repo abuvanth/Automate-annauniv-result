@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as bs
-u=913013104001
-while  u<=913013104053:
+u=913013104001  #starting Register  number
+while  u<=913013104053:  #ending Register number
        r=requests.post('http://aucoe.annauniv.edu/cgi-bin/result/cgrade.pl',data={'regno':u})
 #print r.content
        u=u+1
