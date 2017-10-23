@@ -1,3 +1,3 @@
-# Automate-annauniv-result
+# Scrap-annauniv-result
 
 pip install bs4
