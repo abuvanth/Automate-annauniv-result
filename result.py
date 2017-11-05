@@ -7,7 +7,7 @@ while  u<=n:  #ending Register number
        r=requests.post('http://aucoe.annauniv.edu/cgi-bin/result/cgrade.pl',data={'regno':u})
 #print r.content
        u=u+1
-       s=bs(r.content,'lxml')
+       s=bs(r.content,'html.parser')
        for st in s.find_all('strong'):
            print st.string
            stra=str(st.string)
