@@ -5,7 +5,7 @@ u=int(raw_input("Enter Your Reg No "))
 r=requests.post('http://aucoe.annauniv.edu/cgi-bin/result/cgrade.pl',data={'regno':u})
 s=bs(r.content,'html.parser')
 a=[]
-f=open('audata.csv','a+')
+f=open('audata-single.csv','a+')
 writer=csv.writer(f)
 a=[]
 for st in s.find_all('strong'):
