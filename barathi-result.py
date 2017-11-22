@@ -1,7 +1,8 @@
 import requests,csv
 from bs4 import BeautifulSoup as bs
 url="http://cdn.b-u.ac.in/res_may2017/bsc.php"
-data=requests.post(url,data={'rno':'1522J0371'})
+rno=raw_input('Enter your Reg No :')
+data=requests.post(url,data={'rno':rno})
 sp=bs(data.content,'html.parser')
 a=[]
 f=open('budata.csv','a+')
