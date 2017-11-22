@@ -8,7 +8,7 @@ while  u<=n:  #ending Register number
        u=u+1
        s=bs(r.content,'html.parser')
        a=[]
-       f=open('audata.csv','a+')
+       f=open('audata-bulk.csv','a+')
        writer=csv.writer(f)
        a=[]
        for st in s.find_all('strong'):
