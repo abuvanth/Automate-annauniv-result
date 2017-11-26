@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 import csv
 c=raw_input('Single Result or Bulk Result (S/B)..?')
-if c=='b':
+if c=='b' or c=='B':
    u=int(raw_input("Enter Your starting Reg No "))
    n=int(raw_input("Enter Your Ending Reg No "))
    while  u<=n:  #ending Register number
