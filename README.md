@@ -1,3 +1,3 @@
 # Quick-result
 
-pip install bs4 requests
+pip install -U bs4 requests pyOpenSSL
